@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152D671820E2D6A100C7B945 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152D671720E2D6A100C7B945 /* ColorViewController.swift */; };
 		15819E5520E2D558002E4C51 /* BuildProblemFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 15819E5320E2D558002E4C51 /* BuildProblemFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		152D671720E2D6A100C7B945 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		15819E5020E2D558002E4C51 /* BuildProblemFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BuildProblemFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15819E5320E2D558002E4C51 /* BuildProblemFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuildProblemFramework.h; sourceTree = "<group>"; };
 		15819E5420E2D558002E4C51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				15819E5320E2D558002E4C51 /* BuildProblemFramework.h */,
 				15819E5420E2D558002E4C51 /* Info.plist */,
+				152D671720E2D6A100C7B945 /* ColorViewController.swift */,
 			);
 			path = BuildProblemFramework;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					15819E4F20E2D558002E4C51 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152D671820E2D6A100C7B945 /* ColorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		15819E5920E2D558002E4C51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.brunophilipe.BuildProblemFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		15819E5A20E2D558002E4C51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
